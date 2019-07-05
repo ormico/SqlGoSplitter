@@ -11,7 +11,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  Version: '1.0.0.$(rev:.r)'
+  Version: '1.0.0.$(Rev:.r)'
 
 steps:
 - task: DotNetCoreCLI@2
