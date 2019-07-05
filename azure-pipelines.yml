@@ -18,3 +18,4 @@ steps:
     command: 'build'
     projects: 'OrmicoSqlGoSplitter.sln'
     workingDirectory: 'OrmicoSqlGoSplitter'
+    arguments: '--configuration $(buildConfiguration)'
