@@ -1,0 +1,27 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
+  Version: '1.0.0.$(Build.BuildID)'
+
+steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'build'
+    workingDirectory: 'OrmicoSqlGoSplitter'
+    arguments: '--configuration $(buildConfiguration)'
+- script: dotnet test OrmicoSqlGoSplitter/Ormico.SqlGoSplitter.Tests/Ormico.SqlGoSplitter.Tests.csproj --logger trx --collect "Code coverage"
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx'
