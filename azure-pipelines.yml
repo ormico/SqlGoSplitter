@@ -16,7 +16,6 @@ steps:
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
-    projects: 'OrmicoSqlGoSplitter.sln'
     workingDirectory: 'OrmicoSqlGoSplitter'
     arguments: '--configuration $(buildConfiguration)'
 - script: dotnet test Ormico.SqlGoSplitter.Tests.csproj --logger trx
