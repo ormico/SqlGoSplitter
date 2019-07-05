@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RepositoryUrl>https://github.com/ormico/SqlGoSplitter</RepositoryUrl>
+    <Product>Ormico SQL GO Splitter</Product>
+    <Company>Ormico</Company>
+    <Authors>Zack Moore</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
