@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ormico.SqlGoSplitter", "Ormico.SqlGoSplitter\Ormico.SqlGoSplitter.csproj", "{43DCEAF9-35FD-4D8C-8A3F-F255F1B21547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ormico.SqlGoSplitter.Tests", "Ormico.SqlGoSplitter.Tests\Ormico.SqlGoSplitter.Tests.csproj", "{D376E8E1-A198-48B5-9D6C-F5C7E9B8F84D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43DCEAF9-35FD-4D8C-8A3F-F255F1B21547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DCEAF9-35FD-4D8C-8A3F-F255F1B21547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DCEAF9-35FD-4D8C-8A3F-F255F1B21547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DCEAF9-35FD-4D8C-8A3F-F255F1B21547}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D376E8E1-A198-48B5-9D6C-F5C7E9B8F84D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D376E8E1-A198-48B5-9D6C-F5C7E9B8F84D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D376E8E1-A198-48B5-9D6C-F5C7E9B8F84D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D376E8E1-A198-48B5-9D6C-F5C7E9B8F84D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {262CC7A3-8440-401B-A2DD-2D89C9D50EE7}
+	EndGlobalSection
+EndGlobal
