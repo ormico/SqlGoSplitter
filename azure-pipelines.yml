@@ -19,3 +19,9 @@ steps:
     projects: 'OrmicoSqlGoSplitter.sln'
     workingDirectory: 'OrmicoSqlGoSplitter'
     arguments: '--configuration $(buildConfiguration)'
+- script: dotnet test Ormico.SqlGoSplitter.Tests.csproj --logger trx
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx'
