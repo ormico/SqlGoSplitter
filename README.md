@@ -50,7 +50,7 @@ GO
 Will parse into 1 SQL Script. The first section of code including the first GO is commented out and will not cause a script break.
 
 ## How to get
-NuGet Package is coming...
+[NuGet Package](https://www.nuget.org/packages/Ormico.SqlGoSplitter/)
 
 # Attribution
 This code originated as part of [Subtext](https://github.com/haacked/Subtext) and all credit for it's origin go to that team. Blame for any modifications can go to me.
