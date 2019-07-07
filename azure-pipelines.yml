@@ -18,7 +18,7 @@ steps:
   inputs:
     command: 'build'
     workingDirectory: 'OrmicoSqlGoSplitter'
-    arguments: '--configuration $(buildConfiguration)'
+    arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)'
 - script: dotnet test OrmicoSqlGoSplitter/Ormico.SqlGoSplitter.Tests/Ormico.SqlGoSplitter.Tests.csproj --logger trx --collect "Code coverage"
 - task: PublishTestResults@2
   condition: succeededOrFailed()
