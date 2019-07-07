@@ -25,3 +25,7 @@ steps:
   inputs:
     testRunner: VSTest
     testResultsFiles: '**/*.trx'
+- task: PublishBuildArtifacts@1
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    artifactName: nuget-artifacts
